@@ -1,0 +1,15 @@
+language: cpp
+os: linux
+dist: Bionic
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../mp2_last_lab_monom
+  - make -j
+  - ./test/MP2_TESTS
+notifications:
+  email: false
