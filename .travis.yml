@@ -8,7 +8,7 @@ before_script:
   - mkdir ../build
   - cd ../build
 script:
-  - cmake ../mp2_last_lab_monom
+  - cmake ../mp2_monom
   - make -j
   - ./test/MP2_TESTS
 notifications:
